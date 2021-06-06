@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_comida"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/comida"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_comida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_cena"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_comida"
+        android:hint="@string/cena"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_cena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

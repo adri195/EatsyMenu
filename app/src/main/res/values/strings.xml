@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Eatsy Menu</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="comida"><u>Comida</u></string>
+    <string name="cena"><u>Cena</u></string>
+    <string name="anadir">Añadir</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="nombre">Nombre</string>
+    <string name="cambiar_contrasena">Cambiar la contraseña</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="lista">Lista</string>
+    <string name="producto">Producto</string>
+    <string name="menu_semanal">Menú semanal</string>
+    <string name="historico">Histórico</string>
+    <string name="inicio">Inicio</string>
+    <string name="compra">Compra</string>
+    <string name="perfil">Perfil</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lstvw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botNavBar"
+        android:scrollbarSize="0dp"/>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botNavBar"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/shopListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botNavBar"
+        android:visibility="invisible"
+        android:scrollbarSize="0dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/loadingGif"
+                android:layout_width="133dp"
+                android:layout_height="78dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botNavBar"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        android:visibility="invisible"
+        android:onClick="addList"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        app:labelVisibilityMode="unlabeled"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listaCompra"
+        android:layout_above="@+id/botNavBar"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListName"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_below="@+id/ListName"/>
+    </RelativeLayout>
+</RelativeLayout>
